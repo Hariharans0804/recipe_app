@@ -106,6 +106,10 @@ npx react-native run-android
 npx react-native start
 
 
+<!-- node modules delete Windows command -->
+rmdir /s /q node_modules     
+
+<!-- ================================================================== -->
 cd > android                                 step - 1
 
 <!-- APK gradlew clean -->
@@ -120,7 +124,7 @@ android > gradlew assembleRelease            step - 3
 
 
 <!-- ============================================================================== -->
-Asset Fonts linking command
+<!-- Asset Fonts linking command -->
 
 Create react-native.config.js in the root of your project (where package.json is).
 
@@ -135,11 +139,11 @@ module.exports={
 
 <!-- After this command, this command -->
 
-new version command
+<!-- new version command -->
 
 npx react-native-asset     <== command
 
-old version command
+<!-- old version command -->
 
 npx react-native link      <== command
 
@@ -162,6 +166,10 @@ npm install react-native-gesture-handler react-native-reanimated
 
 npm i react-navigation-header-buttons
 
+npm install @reduxjs/toolkit
+
 npm install react-redux
 
-npm install @reduxjs/toolkit
+npm i axios
+
+npm i @stripe/stripe-react-native
